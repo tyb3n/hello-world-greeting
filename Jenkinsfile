@@ -38,7 +38,7 @@ pipeline {
 
           }
       
-        }
+        }*/
 
         stage('Compilation') {
     
@@ -51,14 +51,14 @@ pipeline {
         stage('Publication du binaire') {
 
           steps {
-            sh "curl -u admin:Shaymin122 --upload-file target/*.war 'http://84.39.43.46:8081/repository/depot_test/rondoudou${BUILD_NUMBER}.war'"        
+            sh "curl -u admin:draco1dresseur9 --upload-file target/*.war 'http://10.10.20.31:8081/repository/depot_test/app${BUILD_NUMBER}.war'"        
           }
 
         }
     
       }
   
-    }
+    }/*
     
     stage('Tests de déploiement') {
       
@@ -71,7 +71,7 @@ pipeline {
         stage('Téléchargement du binaire') {
           
           steps {
-            sh "wget -P /home/jenkins/tomcat/webapps http://84.39.43.46:8081/repository/depot_test/rondoudou${BUILD_NUMBER}.war"
+            sh "wget -P /home/jenkins/tomcat/webapps http://84.39.43.46:8081/repository/depot_test/app${BUILD_NUMBER}.war"
             sh "mv /home/jenkins/tomcat/webapps/rondoudou${BUILD_NUMBER}.war /home/jenkins/tomcat/webapps/rondoudou.war"
           }
  
@@ -135,8 +135,8 @@ pipeline {
             sh 'docker push reeban/tomcat_app'
           }
          
-        }*/
+        }
       }
-    }
+    }*/
   }
 }
