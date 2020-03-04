@@ -28,7 +28,7 @@ pipeline {
       
         }
 
-        stage('Analyse statique') {
+/*        stage('Analyse statique') {
       
           steps {
         
@@ -38,7 +38,7 @@ pipeline {
 
           }
       
-        }
+        }*/
 
         stage('Compilation') {
     
