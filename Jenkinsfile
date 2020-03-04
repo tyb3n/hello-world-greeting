@@ -27,7 +27,7 @@ pipeline {
           }
       
         }
-
+/*
         stage('Analyse statique') {
       
           steps {
@@ -135,7 +135,7 @@ pipeline {
             sh 'docker push reeban/tomcat_app'
           }
          
-        }
+        }*/
       }
     }
   }
