@@ -76,7 +76,8 @@ pipeline {
           }
  
         }
-      }/*
+      }
+    }/*
         
         stage('Test de performance') {
           
