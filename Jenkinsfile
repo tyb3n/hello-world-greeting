@@ -75,7 +75,8 @@ pipeline {
             sh "mv /home/jenkins/tomcat/webapps/app${BUILD_NUMBER}.war /home/jenkins/tomcat/webapps/app.war"
           }
  
-        }/*
+        }
+      }/*
         
         stage('Test de performance') {
           
